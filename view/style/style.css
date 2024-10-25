@@ -1,0 +1,98 @@
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 25px;
+    position: fixed;
+}
+
+/* Menu Header */
+.menu-header {
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Menu Section */
+.menu-section {
+    margin-top: 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+/* Menu List */
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Icon Styling */
+.menu-item i.icon {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 12px 8px;
+    color: #808191;
+    margin-right: 20px;
+    font-size: 16px;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+/* Active Menu Item Styling */
+.menu-item.active {
+    color: #000;
+    font-weight: 600;
+    transition: font-weight 0.3s;
+}
+
+.menu-item.active i.icon {
+    background-color: #ff7551;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Divider Styling */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Logo Styling */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 70%;
+}
