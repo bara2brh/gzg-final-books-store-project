@@ -190,6 +190,7 @@ body {
 .book-buttons{
    text-align: center;
 }
+
 .recommended-books {
     display: flex;
     justify-content: center;
