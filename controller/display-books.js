@@ -1,3 +1,42 @@
+
+const initializeBooksInStorage = () => {
+    if (!localStorage.getItem('books')) {
+        localStorage.setItem('books', JSON.stringify(books));
+    }
+};
+
+const getBooksFromStorage = () => JSON.parse(localStorage.getItem('books'));
+
+const updateBookInStorage = (updatedBook) => {
+    const allBooks = getBooksFromStorage();
+    const bookIndex = allBooks.findIndex(book => book.id === updatedBook.id);
+    if (bookIndex !== -1) {
+        allBooks[bookIndex] = updatedBook;
+        localStorage.setItem('books', JSON.stringify(allBooks));
+    }
+};
+
+// Toggle read status
+const toggleRead = (bookId) => {
+    const books = getBooksFromStorage();
+    const book = books.find(book => book.id === bookId);
+    if (book) {
+        book.isRead = !book.isRead;
+        updateBookInStorage(book);
+    }
+};
+
+// Toggle favorite status
+const toggleFavorite = (bookId) => {
+    const books = getBooksFromStorage();
+    const book = books.find(book => book.id === bookId);
+    if (book) {
+        book.isFavorite = !book.isFavorite;
+        updateBookInStorage(book);
+    }
+};
+
+// Display book details
 const displayBookDetails = (book) => {
     const bookImg = document.querySelector('.book-img img');
     const bookTitle = document.getElementById('book-title');
@@ -9,6 +48,7 @@ const displayBookDetails = (book) => {
     const addReadButton = document.getElementById('add-read');
     const addFavoriteButton = document.getElementById('add-favorite');
 
+   
     bookImg.src = book.img;
     bookImg.alt = book.name;
     bookTitle.textContent = book.name;
@@ -23,19 +63,20 @@ const displayBookDetails = (book) => {
 
     addReadButton.onclick = () => {
         toggleRead(book.id);
-        displayBookDetails(book); 
+        displayBookDetails(getBooksFromStorage().find(b => b.id === book.id)); 
     };
 
     addFavoriteButton.onclick = () => {
         toggleFavorite(book.id);
-        displayBookDetails(book); 
+        displayBookDetails(getBooksFromStorage().find(b => b.id === book.id)); 
     };
 };
 
-
-
+// Initialize books and display the first book on load
 document.addEventListener('DOMContentLoaded', () => {
-    if (books.length > 0) {
-        displayBookDetails(books[0]); 
+    initializeBooksInStorage();
+    const booksFromStorage = getBooksFromStorage();
+    if (booksFromStorage.length > 0) {
+        displayBookDetails(booksFromStorage[0]); // Display the first book
     }
 });

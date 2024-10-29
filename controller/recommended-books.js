@@ -3,6 +3,11 @@ const getRandomBooks = (count) => {
     return shuffledBooks.slice(0, count);
 };
 
+const getBookFromStorageById = (bookId) => {
+    const allBooks = getBooksFromStorage();
+    return allBooks.find(book => book.id === bookId);
+};
+
 const displayRecommendedBooks = () => {
     const recommendedBooksContainer = document.querySelector('.recommended-books');
     recommendedBooksContainer.innerHTML = ''; // Clear existing content
@@ -18,6 +23,12 @@ const displayRecommendedBooks = () => {
             <h3>${book.name}</h3>
             <p>${book.author}</p>
         `;
+
+        
+        bookDiv.addEventListener('click', () => {
+            const bookFromStorage = getBookFromStorageById(book.id) || book;
+            displayBookDetails(bookFromStorage);
+        });
 
         recommendedBooksContainer.appendChild(bookDiv);
     });
