@@ -1,0 +1,83 @@
+
+/* Content styling (single book page) */
+
+.content {
+    margin-left: 210px; /* sidebar width + 10px */ 
+    padding: 20px;
+}
+.content .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.book-img img {
+    max-width: 300px;
+    max-height: 450px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px #888888;
+}
+.book-img {
+   padding: 3%;
+}
+.book-details{
+    margin-top: 0px;
+    width: 100%;
+}
+#book-title {
+    color: #3f3e3e;
+    font-size: 22pt;
+}
+.book-description
+{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 12pt;
+}
+.book-info {
+    margin-top: 30px;
+}
+.book-info h3 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 0 0 8px 0; 
+    font-size: 12pt;
+}
+
+.book-info h3 span {
+    font-weight: normal;
+    color: #333; 
+}
+
+.book-buttons button{
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.book-buttons #add-read:hover,#add-favorite{
+    background-color: white;
+    color: #df3e16;
+    border: 2px solid #ff7551;
+    border-radius: 30px;
+}
+
+.book-buttons #add-read{
+    background-color: #ff7551; 
+    color: white; 
+    border: 2px solid #ff7551;
+    border-radius: 30px;
+}
+
+.book-buttons i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.book-buttons{
+   text-align: center;
+}

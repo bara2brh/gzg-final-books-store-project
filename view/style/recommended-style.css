@@ -1,0 +1,66 @@
+.recommended-books {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recommended-books .book {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+.recommended-books .book img {
+    width: 100%;
+    max-width: 130px;
+    height: 200px; 
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px #888888;
+}
+
+.recommended-books .book h3 {
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 13pt;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+    height: 20px; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.recommended-books .book p {
+    font-size: 10pt;
+    line-height: 1.2;
+    text-align: center;
+    height: 20px; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#recommended-title , #favorite-title {
+    font-weight: 600;
+    font-size: 15pt;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: #ff7551 solid 4px;
+    display: inline-block;
+}
+
+.recommended , .favorite-section {
+    text-align: center;
+}
+
+.recommended-books .book:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
