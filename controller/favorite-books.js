@@ -5,13 +5,13 @@ const getFavoriteBooksFromStorage = () => {
 };
 
 const displayFavoriteBooks = () => {
-    const favoriteBooksContainer = document.querySelector('.favorite-books');
-    favoriteBooksContainer.innerHTML = ''; 
+    const readedBookContainer = document.querySelector('.favorite-books');
+    readedBookContainer.innerHTML = ''; 
 
     const favoriteBooks = getFavoriteBooksFromStorage();
 
     if (favoriteBooks.length === 0) {
-        favoriteBooksContainer.innerHTML = '<p>No favorite books added yet, Go and add some books !</p>';
+        readedBookContainer.innerHTML = '<p>No favorite books added yet, Go and add some books !</p>';
         return;
     }
 
@@ -33,7 +33,7 @@ const displayFavoriteBooks = () => {
             displayFavoriteBooks();
         });
 
-        favoriteBooksContainer.appendChild(bookDiv);
+        readedBookContainer.appendChild(bookDiv);
     });
 };
 

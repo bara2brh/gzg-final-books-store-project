@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+   
+    <link rel="shortcut icon" href="/view/assets/img/favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/view/style/style.css">
+    <link rel="stylesheet" href="/view/style/favorite-style.css">
+    <link rel="stylesheet" href="/view/style/recommended-style.css">
+    <link rel="stylesheet" href="/view/style/single-book.css">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-section">
+            <span class="section-title">MENU</span>
+            <ul class="menu-list">
+              <a href="home.html">
+                <li class="menu-item active">
+                    <i class="icon fa-solid fa-house"></i>
+                    <span>Home</span>
+                </li>
+                <a href="read-books.html">
+                <li class="menu-item">
+                    <i class="icon fa-solid fa-grid-2 "></i>
+                    <span>Readed Book</span>
+                </li>
+                </a>
+                <a href="book-page.html">
+                <li class="menu-item">
+                    <i class="icon fa-duotone fa-solid fa-bookmark"></i>
+                    <span>Book Page</span>
+                </li>
+                </a>
+                <a href="favorite-books.html"> <!-- Link to the Favorite Books page -->
+                  <li class="menu-item active">
+                      <i class="icon fa-solid fa-heart"></i>
+                      <span>Favorite Books</span>
+                  </li>
+              </a>
+            </ul>
+        </div>
+        <hr class="divider">
+        <div class="menu-section">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <i class="icon fa-solid fa-plus"></i>
+                    <span>Add Book</span>
+                </li>
+                <li class="menu-item">
+                    <i class="icon fa-solid fa-circle-info"></i>
+                    <span>Help</span>
+                </li>
+                
+            </ul>
+        </div>
+        <hr class="divider">
+        <div class="logo">
+            <img src="/view/assets/img/favico.png" alt="">
+            <div class="menu-header"> BOOK LIBRARY</div>
+
+        </div>
+    </div>
+    <!-- content section -->
+    <div class="content">
+       
+           
+            
+
+        
+        <!-- recommended section -->
+        
+        <div class="recommended">
+
+            <h3 id="recommended-title">Our Library Books</h3>
+            <div class="recommended-books">
+           
+                <div class="book">
+                    <img src="/view/assets/img/books/book-1.jpg" alt="">
+                    <h3>The Design Of Books</h3>
+                    <p>Debbie Berne</p>
+                </div>
+                <div class="book">
+                    <img src="/view/assets/img/books/book-1.jpg" alt="">
+                    <h3>The Design Of Books</h3>
+                    <p>Debbie Berne</p>
+                </div>
+                <div class="book">
+                    <img src="/view/assets/img/books/book-1.jpg" alt="">
+                    <h3>The Design Of Books</h3>
+                    <p>Debbie Berne</p>
+                </div>
+                <div class="book">
+                    <img src="/view/assets/img/books/book-1.jpg" alt="">
+                    <h3>The Design Of Books</h3>
+                    <p>Debbie Berne</p>
+                </div>
+                <div class="book">
+                    <img src="/view/assets/img/books/book-1.jpg" alt="">
+                    <h3>The Design Of Books</h3>
+                    <p>Debbie Berne</p>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+      
+    </div>
+    
+     <!-- Js link -->
+     <script src="/controller/display-books.js"></script>
+     <script src="/controller/recommended-books.js"></script>
+     <script src="/model/data.js"></script>
+     <script src="/controller/sidebar.js"></script>
+
+
+</body>
+</html>

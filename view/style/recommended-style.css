@@ -1,52 +1,52 @@
+/* Recommended Books Section */
 .recommended-books {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 1100px; 
+    margin: 0 auto;
 }
 
 .recommended-books .book {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     align-items: center;
-    max-width: 200px;
+    padding: 30px;
+    width: 150px; 
     text-align: center;
 }
 
 .recommended-books .book img {
     width: 100%;
-    max-width: 130px;
-    height: 200px; 
+    height: 200px;
     border-radius: 10px;
     box-shadow: 1px 2px 5px #888888;
 }
 
 .recommended-books .book h3 {
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 13pt;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 5px;
-    height: 20px; 
-    overflow: hidden; 
+    height: 20px;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-
 }
 
 .recommended-books .book p {
     font-size: 10pt;
     line-height: 1.2;
     text-align: center;
-    height: 20px; 
-    text-overflow: ellipsis;
+    height: 20px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#recommended-title , #favorite-title {
+/* Title Styling */
+#recommended-title, #favorite-title {
     font-weight: 600;
     font-size: 15pt;
     color: #333;
@@ -56,10 +56,21 @@
     display: inline-block;
 }
 
-.recommended , .favorite-section {
+.recommended, .readed-section, .favorite-section {
     text-align: center;
 }
 
+#recommended-title, #readed-title {
+    font-weight: 600;
+    font-size: 15pt;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: #ff7551 solid 4px;
+    display: inline-block;
+}
+
+/* Hover Effect */
 .recommended-books .book:hover {
     text-decoration: underline;
     cursor: pointer;

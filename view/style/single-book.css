@@ -65,6 +65,12 @@
     border: 2px solid #ff7551;
     border-radius: 30px;
 }
+.book-buttons #add-read:hover,#add-readed{
+    background-color: white;
+    color: #df3e16;
+    border: 2px solid #ff7551;
+    border-radius: 30px;
+}
 
 .book-buttons #add-read{
     background-color: #ff7551; 

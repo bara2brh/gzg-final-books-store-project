@@ -80,3 +80,5 @@ document.addEventListener('DOMContentLoaded', () => {
         displayBookDetails(booksFromStorage[0]); // Display the first book
     }
 });
+
+

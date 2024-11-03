@@ -12,7 +12,7 @@ const displayRecommendedBooks = () => {
     const recommendedBooksContainer = document.querySelector('.recommended-books');
     recommendedBooksContainer.innerHTML = ''; // Clear existing content
 
-    const randomBooks = getRandomBooks(5);
+    const randomBooks = getRandomBooks(20);
 
     randomBooks.forEach((book) => {
         const bookDiv = document.createElement('div');
