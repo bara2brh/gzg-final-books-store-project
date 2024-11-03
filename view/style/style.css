@@ -44,7 +44,9 @@ body {
     list-style: none;
     padding: 0;
 }
-
+.menu-list a{
+    text-decoration: none;
+}
 /* Menu Item Styling */
 .menu-item {
     display: flex;
